@@ -1,36 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Crowns | Next-Gen Agency</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body { background-color: black; color: white; font-family: sans-serif; }
-        .glow { background: radial-gradient(circle at 50% -20%, #3e3e3e, transparent); }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pique Media — Social Media Growth Agency</title>
+<meta name="theme-color" content="#F5F6FB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F0D1E" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+<meta name="description" content="Pique Media is a social media growth agency: professional videos, ad campaigns, 24/7 page management and AI automation on simple monthly plans. Book a free strategy call.">
+<meta property="og:title" content="Pique Media — Social Media Growth Agency">
+<meta property="og:description" content="Professional videos, ad campaigns and 24/7 page management on simple monthly plans, billed in INR or USD.">
+<meta property="og:type" content="website">
+<script>document.documentElement.className='js'</script>
+<style>
+:root{--bg:#F5F6FB;--surface:#FFFFFF;--ink:#17142E;--muted:#5B5873;--line:#DCDDEA;--accent:#E3145C;--accent-ink:#FFFFFF;--spark:#FFB800;--dark:#17142E;--dark-ink:#F5F6FB;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F0D1E;--surface:#181528;--ink:#F1F0FA;--muted:#A7A4C0;--line:#2B2845;--accent:#FF4D88;--accent-ink:#17142E;--dark:#1F1B38;--dark-ink:#F1F0FA}}
+:root[data-theme="dark"]{--bg:#0F0D1E;--surface:#181528;--ink:#F1F0FA;--muted:#A7A4C0;--line:#2B2845;--accent:#FF4D88;--accent-ink:#17142E;--dark:#1F1B38;--dark-ink:#F1F0FA}
+html{scroll-padding-top:calc(76px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%}
+h1,h2,h3{font-family:inherit;font-weight:800;line-height:1.08;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+h2{font-size:clamp(30px,4.6vw,48px);font-weight:800;max-width:18ch}
+.lead{color:var(--muted);max-width:60ch;margin:16px 0 0}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:600;padding:15px 26px;border-radius:999px;text-decoration:none;border:0;font:600 17px system-ui,sans-serif;cursor:pointer;transition:transform .15s,filter .15s;min-height:48px}
+.btn:active{transform:scale(.96)}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+:focus-visible{outline:3px solid var(--spark);outline-offset:3px}
+.nav-in{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:14px;padding-bottom:14px}
+.logo{font:800 24px system-ui,sans-serif;text-decoration:none;letter-spacing:-.03em}
+.logo i{color:var(--accent);font-style:normal}
+.hero{padding:40px 0 90px}
+.hero h1{font-size:clamp(40px,7.4vw,84px);font-weight:800;max-width:15ch}
+.hero p.sub{font-size:20px;color:var(--muted);max-width:56ch;margin:24px 0 32px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.trust{margin-top:34px;display:inline-flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:9px 18px;font-size:15px;font-weight:500}
+.trust b{width:10px;height:10px;border-radius:50%;background:var(--spark);display:inline-block;animation:pulse 2s ease-in-out 3}
+@keyframes pulse{50%{transform:scale(1.7);opacity:.5}}
+@media (prefers-reduced-motion:reduce){.trust b{animation:none}html{scroll-behavior:auto}}
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start}
+.about p{color:var(--muted)}
+.founders{display:grid;gap:14px}
+.founder{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
+.founder h3{font-size:24px}
+.founder span{color:var(--accent);font-weight:600;font-size:15px}
+.founder p{margin:8px 0 0;font-size:15px}
+.band{background:var(--dark);color:var(--dark-ink)}
+.band .lead{color:color-mix(in srgb,var(--dark-ink) 70%,transparent)}
+.svc{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;column-gap:56px}
+.svc div{border-top:1px solid color-mix(in srgb,var(--dark-ink) 22%,transparent);padding:22px 0 26px}
+.svc h3{font-size:22px;margin-bottom:6px}
+.svc p{margin:0;font-size:15.5px;color:color-mix(in srgb,var(--dark-ink) 72%,transparent)}
+.plans{margin-top:44px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;align-items:stretch}
+.plan{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px 22px;display:flex;flex-direction:column}
+.plan.top{border:2px solid var(--accent)}
+.plan h3{font-size:22px}
+.plan .tag{font-size:13px;color:var(--accent);font-weight:600;min-height:20px}
+.price{font:800 34px system-ui,sans-serif;margin:12px 0 0;letter-spacing:-.03em}
+.price small{display:block;font:500 14px system-ui,sans-serif;color:var(--muted);letter-spacing:0}
+.plan ul{list-style:none;padding:0;margin:20px 0 24px;font-size:15px;flex:1}
+.plan li{padding:8px 0 8px 22px;border-top:1px solid var(--line);position:relative}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+.plan .btn{text-align:center;padding:13px 16px;font-size:16px}
+.steps{margin-top:44px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--ink)}
+.step{padding:22px 22px 0 0}
+.step b{font:800 15px system-ui,sans-serif;color:var(--accent)}
+.step h3{font-size:21px;margin:6px 0 8px}
+.step p{margin:0;font-size:15px;color:var(--muted)}
+.book{display:grid;grid-template-columns:1fr 1.05fr;gap:52px;align-items:start}
+form{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:28px;display:grid;gap:16px}
+label{display:grid;gap:6px;font-weight:600;font-size:15px}
+input,select{font:400 16px system-ui,sans-serif;min-height:48px;padding:13px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ok{display:none;text-align:center;padding:30px 10px}
+.ok h3{font-size:28px;margin-bottom:8px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:14.5px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.table-scroll{overflow-x:auto}
+@media (max-width:900px){.plans{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.about,.book{grid-template-columns:1fr}}
+@media (max-width:600px){section{padding:60px 0}.plans,.steps,.svc,.row{grid-template-columns:1fr}.step{padding-bottom:10px}}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.hero h1,.hero .sub,.hero .ctas,.trust{animation:up .55s cubic-bezier(.2,.7,.2,1) both}
+.hero .sub{animation-delay:.08s}.hero .ctas{animation-delay:.16s}.trust{animation-delay:.24s}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:none;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .3s ease}
+.bar.show{transform:none}
+.bar .btn{display:block;width:100%;text-align:center}
+@media (max-width:700px){.bar{display:block}footer{padding-bottom:88px}}
+@media (prefers-reduced-motion:reduce){.hero h1,.hero .sub,.hero .ctas,.trust{animation:none}.bar,.btn{transition:none}}
+.notes{margin-top:28px;border-top:1px solid var(--line);padding-top:24px}
+.notes h3{font-size:20px;margin-bottom:14px}
+.nl{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.nl h4{margin:0 0 4px;font-size:16px}
+.nl p{margin:0;font-size:14.5px;color:var(--muted)}
+@media (max-width:700px){.nl{grid-template-columns:1fr;gap:16px}}
+.detail{margin-top:56px;border-top:1px solid var(--line);padding-top:40px}
+.detail h3{font-size:26px;margin-bottom:18px}
+.cmp{width:100%;min-width:720px;border-collapse:collapse;font-size:15px}
+.cmp th,.cmp td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.cmp thead th{font-size:16px;border-bottom:2px solid var(--ink)}
+.cmp tbody th{font-weight:600;position:sticky;left:0;background:var(--bg)}
+.cmp td small{color:var(--muted)}
+.fine{font-size:14px;color:var(--muted);margin:12px 0 0}
+.feat{display:grid;grid-template-columns:1fr 1fr;column-gap:40px}
+.feat details{border-top:1px solid var(--line);padding:4px 0}
+.feat summary{cursor:pointer;font-weight:600;padding:12px 0;list-style:none;display:flex;justify-content:space-between;gap:12px;min-height:48px;align-items:center}
+.feat summary::-webkit-details-marker{display:none}
+.feat summary::after{content:"+";color:var(--accent);font-size:22px;transition:transform .2s}
+.feat details[open] summary::after{transform:rotate(45deg)}
+.feat details p{margin:0 0 14px;color:var(--muted);font-size:15.5px}
+@media (max-width:700px){.feat{grid-template-columns:1fr}}
+.cases{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.case{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px}
+.who{font-size:14.5px;color:var(--muted);font-weight:500}
+.big{font:800 clamp(30px,4.4vw,42px)/1.05 system-ui,sans-serif;letter-spacing:-.03em;color:var(--accent);margin:12px 0 6px}
+.ba{margin:0 0 14px;font-weight:600}
+.case ul{list-style:none;margin:0 0 14px;padding:0;font-size:15.5px}
+.case li{padding:6px 0 6px 20px;position:relative;border-top:1px solid var(--line)}
+.case li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+.did{margin:0;font-size:14.5px;color:var(--muted)}
+@media (max-width:700px){.cases{grid-template-columns:1fr}}
+.cur{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;padding:3px;background:var(--surface);gap:2px}
+.cur button{font:600 14px system-ui,sans-serif;border:0;background:transparent;color:var(--muted);padding:7px 13px;border-radius:999px;cursor:pointer;min-height:36px}
+.cur button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.nav-r{display:flex;align-items:center;gap:10px}
+.links{display:flex;gap:20px;font-size:15px;font-weight:500}
+.links a{text-decoration:none;color:var(--muted)}
+.links a:hover{color:var(--ink)}
+@media (max-width:800px){.links{display:none}}
+@media (max-width:480px){.nav-r .btn{display:none}}
+.pricebar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+.pricebar span{font-size:14.5px;color:var(--muted)}
+.faq{margin-top:36px;max-width:780px}
+.faq details{border-top:1px solid var(--line);padding:4px 0}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;font-weight:600;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:12px;min-height:48px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--accent);font-size:22px;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{margin:0 0 16px;color:var(--muted);font-size:16px}
+.fgrid{margin-top:40px;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.fcard{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:6px;transition:transform .15s,border-color .15s}
+.fcard:hover{transform:translateY(-3px);border-color:var(--accent)}
+.fcard svg{width:76px;height:62px;color:var(--accent);margin-bottom:10px}
+.fcard h3{font-size:24px}
+.fcard p{margin:0 0 14px;color:var(--muted);font-size:15.5px;flex:1}
+.fbtns{display:flex;gap:8px;flex-wrap:wrap}
+.fbtns .btn{padding:12px 20px;font-size:16px}
+.fbtns .btn.sm{padding:12px 16px;font-size:15px}
+.contact{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:10px}
+.contact a{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:600;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;min-height:52px;word-break:break-word}
+.contact a:hover{border-color:var(--accent)}
+.contact small{display:block;font-weight:500;color:var(--muted);font-size:13px}
+.okbtns{display:grid;gap:10px;margin-top:18px}
+.okbtns .btn{text-align:center}
+dialog{border:1px solid var(--line);border-radius:20px;background:var(--surface);color:var(--ink);padding:26px;width:min(92vw,400px)}
+dialog::backdrop{background:rgba(15,13,30,.6)}
+dialog h3{font-size:24px}
+dialog p{color:var(--muted);margin:6px 0 18px}
+.opts{display:grid;gap:10px;margin-bottom:12px}
+.opts .btn,dialog>.btn{text-align:center;width:100%}
+/* ---------- Polish: look, feel and fixes ---------- */
+:root{color-scheme:light;--shadow:0 1px 2px rgba(23,20,46,.05),0 14px 32px -20px rgba(23,20,46,.35)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--shadow:0 1px 2px rgba(0,0,0,.4),0 14px 32px -20px rgba(0,0,0,.8)}}
+:root[data-theme="dark"]{color-scheme:dark;--shadow:0 1px 2px rgba(0,0,0,.4),0 14px 32px -20px rgba(0,0,0,.8)}
+body{overflow-x:clip;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:var(--accent);color:var(--accent-ink)}
+.skip{position:absolute;left:-999px;top:8px;z-index:60;background:var(--accent);color:var(--accent-ink);padding:10px 16px;border-radius:10px;font-weight:600}
+.skip:focus{left:12px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:31;background:var(--bg)}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:color-mix(in srgb,var(--bg) 86%,transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid color-mix(in srgb,var(--line) 70%,transparent)}
+.btn:not(.ghost){background-image:linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 60%,var(--spark)));box-shadow:0 10px 24px -10px color-mix(in srgb,var(--accent) 70%,transparent)}
+.btn.ghost:hover{border-color:var(--accent)}
+.hero{position:relative;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:-30px 0 auto 0;height:560px;z-index:-1;pointer-events:none;background:radial-gradient(ellipse closest-side at 80% 30%,color-mix(in srgb,var(--accent) 22%,transparent),transparent),radial-gradient(ellipse closest-side at 14% 72%,color-mix(in srgb,var(--spark) 22%,transparent),transparent);-webkit-mask-image:linear-gradient(#000 55%,transparent);mask-image:linear-gradient(#000 55%,transparent)}
+.hero h1{background:linear-gradient(100deg,var(--ink) 58%,var(--accent));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;align-items:center}
+.chips span{font-size:14px;color:var(--muted);margin-right:2px}
+.chips a{font-size:14.5px;font-weight:600;text-decoration:none;border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 14px;min-height:40px;display:inline-flex;align-items:center}
+.chips a:hover{border-color:var(--accent);color:var(--accent)}
+.trust{max-width:100%;border-radius:22px;line-height:1.35}
+.band{background:radial-gradient(700px 360px at 90% 0%,color-mix(in srgb,var(--accent) 28%,transparent),transparent 70%),var(--dark)}
+.svc div h3{transition:color .2s}
+.svc div:hover h3{color:var(--spark)}
+.plan,.case,.founder,.fcard,form{box-shadow:var(--shadow)}
+.plan{transition:transform .2s,border-color .2s}
+.plan:hover{transform:translateY(-4px);border-color:var(--accent)}
+.plan.top{box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 16%,transparent),var(--shadow)}
+.price{font-variant-numeric:tabular-nums}
+.fcard svg{transition:transform .25s}
+.fcard:hover svg{transform:scale(1.07) rotate(-3deg)}
+.bad{border-color:var(--accent)!important;box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 22%,transparent)}
+input:focus,select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 22%,transparent)}
+button.btn:disabled{opacity:.6;cursor:default}
+:root.js :is(section h2,.founder,.svc>div,.plan,.step,form,.case,.fcard,.faq details,.contact li){opacity:0;translate:0 16px;transition:opacity .45s ease,translate .45s cubic-bezier(.2,.7,.2,1),transform .2s,border-color .2s}
+:root.js :is(section h2,.founder,.svc>div,.plan,.step,form,.case,.fcard,.faq details,.contact li).in{opacity:1;translate:none}
+@media (max-width:600px){.hero{padding:24px 0 64px}.hero p.sub{font-size:18px}.nav-in{padding-top:10px;padding-bottom:10px}.fcard{padding:22px}}
+@media (hover:none){.plan:hover,.fcard:hover{transform:none}}
+@media (prefers-reduced-motion:reduce){:root.js :is(section h2,.founder,.svc>div,.plan,.step,form,.case,.fcard,.faq details,.contact li){opacity:1;translate:none;transition:none}.plan,.fcard svg{transition:none}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Pique Media","description":"Social media growth agency: video production, ad campaigns, page management and AI automation.","telephone":"+91 80056 49879","email":"wdyanmol2012@gmail.com","founder":[{"@type":"Person","name":"Anmol Singh"},{"@type":"Person","name":"Jeehan"}]}</script>
 </head>
-<body class="glow min-h-screen flex items-center justify-center overflow-hidden">
-    <div class="text-center px-4">
-        <span class="px-4 py-1 text-xs font-medium text-gray-400 border border-gray-800 rounded-full bg-white/5">
-            The Crowns Agency is Live
-        </span>
-        
-        <h1 class="mt-8 text-6xl md:text-8xl font-bold tracking-tighter">
-            Design at the <br>
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
-                speed of thought.
-            </span>
-        </h1>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+<header class="nav"><div class="wrap nav-in"><a class="logo" href="#top">Pique<i>.</i>Media</a><nav class="links" aria-label="Main"><a href="#results">Results</a><a href="#work">Work</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav><div class="nav-r"><div class="cur" role="group" aria-label="Currency"><button type="button" data-c="INR" aria-pressed="true">₹ INR</button><button type="button" data-c="USD" aria-pressed="false">$ USD</button></div><a class="btn ghost" href="#book" style="padding:10px 20px;font-size:15px">Book a call</a></div></div></header>
+<div class="wrap">
 
-        <p class="mt-6 text-gray-400 max-w-xl mx-auto text-lg">
-            A minimalist workspace for creators. Built for the next generation of digital builders.
-        </p>
+<section class="hero" id="top">
+<h1>Scale your brand faster with video, ads and automation.</h1>
+<p class="sub">Since 2020, we’ve helped 200+ brands build sustainable organic and paid growth. High-converting video, performance ad campaigns, algorithm tuning and AI automation, all under one roof.</p>
+<div class="ctas"><a class="btn" href="#book">Book a Free Strategy Call</a><a class="btn ghost" href="#pricing">See plans and pricing</a></div>
+<div class="chips" aria-label="Niches we make videos for"><span>Videos for:</span><a href="#work">Real Estate</a><a href="#work">Beauty</a><a href="#work">Fashion</a><a href="#work">Salon</a><a href="#work">Faceless</a><a href="#work">Talking Head</a></div>
+<div class="trust"><b></b>Trusted by 200+ Brands Worldwide · Scaling Businesses Since 2020</div>
+</section>
+</div>
 
-        <div class="mt-10 flex gap-4 justify-center">
-            <button class="bg-white text-black px-8 py-3 rounded-lg font-bold hover:bg-gray-200 transition">Get Started</button>
-            <button class="border border-gray-800 px-8 py-3 rounded-lg font-bold hover:bg-white/5 transition">Contact Us</button>
-        </div>
-    </div>
+<section id="about"><div class="wrap about">
+<div>
+<h2>Built in 2020. Obsessed with results.</h2>
+<p class="lead">Pique Media started with one idea: great content should do more than get views. It should grow a business. Since 2020 we’ve turned that idea into a repeatable system for 200+ brands, combining sharp creative, smart paid media and clean automation.</p>
+<p>Our leadership team stays close to every account. We drive high-performance media execution, creative strategy and business growth, so your brand gets senior thinking, not a handoff.</p>
+</div>
+<div class="founders">
+<div class="founder"><h3>Anmol Singh</h3><span>Founder</span><p>Sets the creative and growth direction behind every Pique Media campaign.</p></div>
+<div class="founder"><h3>Jeehan</h3><span>Founder &amp; Manager</span><p>Runs day-to-day delivery so strategy turns into results on schedule.</p></div>
+</div>
+</div></section>
+
+<section class="band" id="services"><div class="wrap">
+<h2>Everything your brand needs to grow, in one team.</h2>
+<p class="lead">Six services that work together, so your content, ads and funnels pull in the same direction.</p>
+<div class="svc">
+<div><h3>Video Production &amp; Short-Form Content</h3><p>Scroll-stopping videos with high-retention hooks, built to convert viewers into customers.</p></div>
+<div><h3>Paid Media &amp; Performance Ads</h3><p>Targeted ad campaigns designed around your offer, your audience and your return.</p></div>
+<div><h3>Organic Growth &amp; Algorithm Tuning</h3><p>Content and posting tuned to how each platform ranks and recommends, so reach compounds.</p></div>
+<div><h3>24/7 Page &amp; Community Management</h3><p>Your page stays active, your audience gets answers, and no comment goes cold.</p></div>
+<div><h3>AI Automation &amp; Funnel Building</h3><p>Automations and funnels that capture leads and handle follow-ups while you sleep.</p></div>
+<div><h3>Custom Web Development &amp; Brand Infrastructure</h3><p>A professional website and brand foundation that turns attention into enquiries.</p></div>
+</div>
+</div></section>
+
+<section id="results"><div class="wrap">
+<h2>Real brands. Real numbers.</h2>
+<p class="lead">From neighbourhood shops to coaches and developers, here’s what happens when strong content meets smart ads.</p>
+<div class="cases">
+<article class="case"><div class="who">Sharma Bakers · Delhi · Bakery</div>
+<div class="big">+310% revenue</div>
+<p class="ba">450 → 18,500 followers in 3 months</p>
+<ul><li>One behind-the-scenes reel hit 1.2M views</li><li>15–20 custom cake orders a day through Instagram DMs</li><li>Now opening a second branch</li></ul>
+<p class="did">Eggless-cake profile, chef reels, local ads and food blogger collabs.</p></article>
+
+<article class="case"><div class="who">Metro Heights Properties · Pune · Real estate</div>
+<div class="big">2000%+ ROAS</div>
+<p class="ba">120 → 8,200 followers in 6 months</p>
+<ul><li>450+ qualified leads at just ₹120 each</li><li>12 luxury flat deals closed from Instagram</li></ul>
+<p class="did">Expert-authority reels, drone property tours, lead-gen ads and retargeting.</p></article>
+
+<article class="case"><div class="who">Coach Ananya · Mumbai · Coaching</div>
+<div class="big">₹12.75 lakh in 4 months</div>
+<p class="ba">800 → 45,000 followers</p>
+<ul><li>2,000+ free masterclass sign-ups</li><li>85 buyers of her ₹15,000 program</li><li>4 reels crossed 500K views</li></ul>
+<p class="did">Sharper niche, 30 scripted reels, a masterclass funnel and conversion ads.</p></article>
+
+<article class="case"><div class="who">Zoya Ethnic Wear · Jaipur · Fashion e-commerce</div>
+<div class="big">5 sales a week → 50+ a day</div>
+<p class="ba">Grew to 22K followers</p>
+<ul><li>Customer photos turned into trust-building content</li><li>Dynamic product and catalog ads drove the orders</li></ul>
+<p class="did">UGC strategy plus catalog sales ads.</p></article>
+</div>
+<p class="fine">Results are from individual client campaigns and vary by business.</p>
+<p style="margin-top:28px"><a class="btn" href="#book">Get results like these</a></p>
+</div></section>
+
+<section id="work"><div class="wrap">
+<h2>Our work, by niche.</h2>
+<p class="lead">Pick a folder to watch real videos we have made for each kind of business.</p>
+<div class="fgrid">
+<div class="fcard"><svg viewBox="0 0 76 62" fill="none" aria-hidden="true"><path d="M4 12a6 6 0 0 1 6-6h17l7 8h32a6 6 0 0 1 6 6v34a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6V12Z" fill="currentColor" opacity=".28"/><path d="M4 22a6 6 0 0 1 6-6h56a6 6 0 0 1 6 6v28a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6V22Z" fill="currentColor"/><path d="M33 31l12 7-12 7V31Z" fill="#fff"/></svg><h3>Real Estate</h3><p>Property and listing videos that make buyers stop and enquire.</p><div class="fbtns"><button type="button" class="btn" id="reopen">See our work</button></div></div>
+<div class="fcard"><svg viewBox="0 0 76 62" fill="none" aria-hidden="true"><path d="M4 12a6 6 0 0 1 6-6h17l7 8h32a6 6 0 0 1 6 6v34a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6V12Z" fill="currentColor" opacity=".28"/><path d="M4 22a6 6 0 0 1 6-6h56a6 6 0 0 1 6 6v28a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6V22Z" fill="currentColor"/><path d="M33 31l12 7-12 7V31Z" fill="#fff"/></svg><h3>Beauty Product Ad</h3><p>Product ad videos built to turn views into orders.</p><div class="fbtns"><a class="btn" href="https://drive.google.com/file/d/1slGqhudhL1prvmxfFwR78Dl18nLTmHsa/view?usp=drive_link" target="_blank" rel="noopener">See our work</a></div></div>
+<div class="fcard"><svg viewBox="0 0 76 62" fill="none" aria-hidden="true"><path d="M4 12a6 6 0 0 1 6-6h17l7 8h32a6 6 0 0 1 6 6v34a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6V12Z" fill="currentColor" opacity=".28"/><path d="M4 22a6 6 0 0 1 6-6h56a6 6 0 0 1 6 6v28a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6V22Z" fill="currentColor"/><path d="M33 31l12 7-12 7V31Z" fill="#fff"/></svg><h3>Faceless Videos</h3><p>Faceless content that grows pages without you on camera.</p><div class="fbtns"><a class="btn" href="https://drive.google.com/file/d/1CR1-VVisN9_lnBU4VNRVUrClhT1wqcyD/view?usp=drive_link" target="_blank" rel="noopener">See our work</a></div></div>
+<div class="fcard"><svg viewBox="0 0 76 62" fill="none" aria-hidden="true"><path d="M4 12a6 6 0 0 1 6-6h17l7 8h32a6 6 0 0 1 6 6v34a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6V12Z" fill="currentColor" opacity=".28"/><path d="M4 22a6 6 0 0 1 6-6h56a6 6 0 0 1 6 6v28a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6V22Z" fill="currentColor"/><path d="M33 31l12 7-12 7V31Z" fill="#fff"/></svg><h3>Talking Head</h3><p>Face-to-camera videos edited for retention.</p><div class="fbtns"><a class="btn" href="https://drive.google.com/file/d/1saL2VolV15e9gNaqHn10RPN-FyL5TM7T/view?usp=sharing" target="_blank" rel="noopener">See our work</a></div></div>
+<div class="fcard"><svg viewBox="0 0 76 62" fill="none" aria-hidden="true"><path d="M4 12a6 6 0 0 1 6-6h17l7 8h32a6 6 0 0 1 6 6v34a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6V12Z" fill="currentColor" opacity=".28"/><path d="M4 22a6 6 0 0 1 6-6h56a6 6 0 0 1 6 6v28a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6V22Z" fill="currentColor"/><path d="M33 31l12 7-12 7V31Z" fill="#fff"/></svg><h3>Fashion</h3><p>Fashion and lifestyle reels with scroll-stopping style.</p><div class="fbtns"><a class="btn" href="https://drive.google.com/file/d/17SCnjNhHp7iHunCugh1lBCdluNJxj2lg/view?usp=sharing" target="_blank" rel="noopener">See our work</a></div></div>
+<div class="fcard"><svg viewBox="0 0 76 62" fill="none" aria-hidden="true"><path d="M4 12a6 6 0 0 1 6-6h17l7 8h32a6 6 0 0 1 6 6v34a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6V12Z" fill="currentColor" opacity=".28"/><path d="M4 22a6 6 0 0 1 6-6h56a6 6 0 0 1 6 6v28a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6V22Z" fill="currentColor"/><path d="M33 31l12 7-12 7V31Z" fill="#fff"/></svg><h3>Salon</h3><p>Salon and grooming content that fills the appointment book.</p><div class="fbtns"><a class="btn" href="https://drive.google.com/file/d/1XC3iC31TXWDAm1x-EYKEJ27GxdgOoJf4/view?usp=sharing" target="_blank" rel="noopener">See our work</a></div></div>
+</div>
+<dialog id="redlg" aria-labelledby="retitle"><h3 id="retitle">Real Estate: which video?</h3><p>Pick a video to watch.</p><div class="opts"><a class="btn" href="https://drive.google.com/file/d/12wo3uU_3z7rscQrRMfEMY58pDbjJ6iRB/view?usp=drive_link" target="_blank" rel="noopener">Watch video 1</a><a class="btn ghost" href="https://drive.google.com/file/d/14erUbdxvqBilcKgDaG38NibCOtfChX3Z/view?usp=drive_link" target="_blank" rel="noopener">Watch video 2</a><a class="btn ghost" href="https://drive.google.com/file/d/1UZf-LCrJ8ACaTrY6oWRl-MLg078WBTVQ/view?usp=drive_link" target="_blank" rel="noopener">Watch video 3</a></div><button type="button" class="btn ghost" id="reclose">Close</button></dialog>
+</div></section>
+
+<section id="pricing"><div class="wrap">
+<h2>Simple monthly plans. Pick your pace.</h2>
+<p class="lead">Every plan is a monthly retainer with no hidden extras. Start where you are and move up as you grow.</p>
+<div class="pricebar"><div class="cur" role="group" aria-label="Currency"><button type="button" data-c="INR" aria-pressed="true">₹ INR</button><button type="button" data-c="USD" aria-pressed="false">$ USD</button></div><span id="curnote">Prices in INR. USD shown as an estimate.</span></div>
+<div class="plans">
+<div class="plan"><h3>Basic</h3><div class="tag">Get started</div>
+<div class="price"><span data-p="Basic" data-role="main">₹8,000</span><small><span data-p="Basic" data-role="alt">~$100 USD</span> / month</small></div>
+<ul><li>6 professional videos per month</li><li>Organic social media growth &amp; optimization</li><li>Basic content strategy &amp; analytics</li><li>Complete 24/7 page management</li><li>1 high-performance ad campaign</li><li>Dedicated account support</li></ul>
+<a class="btn ghost" href="#book" data-plan="Basic">Choose Basic</a></div>
+
+<div class="plan"><h3>Standard</h3><div class="tag">Everything in Basic, plus</div>
+<div class="price"><span data-p="Standard" data-role="main">₹18,000</span><small><span data-p="Standard" data-role="alt">~$225 USD</span> / month</small></div>
+<ul><li>12 professional videos per month</li><li>Advanced 24/7 page &amp; community management</li><li>Accelerated page growth &amp; algorithm tuning</li><li>Instagram verification (blue tick) assistance</li><li>4 targeted ad campaigns</li></ul>
+<a class="btn ghost" href="#book" data-plan="Standard">Choose Standard</a></div>
+
+<div class="plan top"><h3>Pro</h3><div class="tag">Everything in Standard, plus</div>
+<div class="price"><span data-p="Pro" data-role="main">₹36,000</span><small><span data-p="Pro" data-role="alt">~$450 USD</span> / month</small></div>
+<ul><li>22 professional videos per month</li><li>AI automation integration (single app setup)</li><li>6 high-impact ad campaigns, designed to 2x clients</li><li>Custom professional website included</li><li>Multi-city &amp; international orders / reach optimization</li></ul>
+<a class="btn" href="#book" data-plan="Pro">Choose Pro</a></div>
+
+<div class="plan"><h3>Plus</h3><div class="tag">Enterprise · Everything in Pro, plus</div>
+<div class="price"><span data-p="Plus" data-role="main">₹55,000</span><small><span data-p="Plus" data-role="alt">~$685 USD</span> / month</small></div>
+<ul><li>44 professional videos per month</li><li>10 high-performance ad campaigns</li><li>Custom professional website included</li><li>Model shoot: 1 video free (extra charge for additional)</li><li>Personalized growth strategy by industry experts</li><li>On-site shoot included (subject to location / terms)</li><li>Advanced multi-platform omnipresence &amp; AI automations</li></ul>
+<a class="btn ghost" href="#book" data-plan="Plus">Choose Plus</a></div>
+</div>
+<div class="notes">
+<h3>Production notes &amp; terms</h3>
+<div class="nl">
+<div><h4>Shoot on site</h4><p>On-site shooting is included in the Plus Plan. Depending on location, extra travel or logistics costs may apply.</p></div>
+<div><h4>Prefer not to shoot on site?</h4><p>On the Plus plan we can coordinate a model shoot instead: 1 video is free. Additional model videos carry standard production charges.</p></div>
+<div><h4>Currency</h4><p>Switch between INR and USD anywhere on this page. INR is our base price. USD amounts are estimates for international billing, and the final invoice amount is confirmed on your call.</p></div>
+</div>
+</div>
+<div class="detail">
+<h3>Compare every plan in detail</h3>
+<div class="table-scroll"><table class="cmp">
+<thead><tr><th>What you get</th><th>Basic</th><th>Standard</th><th>Pro</th><th>Plus</th></tr></thead>
+<tbody>
+<tr><th>Monthly price</th><td><span data-p="Basic" data-role="main">₹8,000</span><br><small>~<span data-p="Basic" data-role="alt">$100</span></small></td><td><span data-p="Standard" data-role="main">₹18,000</span><br><small>~<span data-p="Standard" data-role="alt">$225</span></small></td><td><span data-p="Pro" data-role="main">₹36,000</span><br><small>~<span data-p="Pro" data-role="alt">$450</span></small></td><td><span data-p="Plus" data-role="main">₹55,000</span><br><small>~<span data-p="Plus" data-role="alt">$685</span></small></td></tr>
+<tr><th>Professional videos</th><td>6</td><td>12</td><td>22</td><td>44</td></tr>
+<tr><th>Ad campaigns</th><td>1 high-performance</td><td>4 targeted</td><td>6 high-impact</td><td>10 high-performance</td></tr>
+<tr><th>24/7 page management</th><td>Complete</td><td>Advanced, with community management</td><td>Included</td><td>Included</td></tr>
+<tr><th>Growth approach</th><td>Organic growth &amp; optimization</td><td>Accelerated growth &amp; algorithm tuning</td><td>Included</td><td>Advanced multi-platform omnipresence</td></tr>
+<tr><th>Strategy &amp; analytics</th><td>Basic content strategy &amp; analytics</td><td>Included</td><td>Included</td><td>Personalized strategy by industry experts</td></tr>
+<tr><th>Account support</th><td>Dedicated</td><td>Included</td><td>Included</td><td>Included</td></tr>
+<tr><th>Instagram blue tick assistance</th><td>—</td><td>Included</td><td>Included</td><td>Included</td></tr>
+<tr><th>AI automation</th><td>—</td><td>—</td><td>Single app setup</td><td>Advanced AI automations</td></tr>
+<tr><th>Custom professional website</th><td>—</td><td>—</td><td>Included</td><td>Included</td></tr>
+<tr><th>Multi-city &amp; international reach</th><td>—</td><td>—</td><td>Included</td><td>Included</td></tr>
+<tr><th>Model / studio videos</th><td>—</td><td>—</td><td>—</td><td>1 free (additional extra)</td></tr>
+<tr><th>On-site shoot</th><td>—</td><td>—</td><td>—</td><td>Included (subject to location / terms)</td></tr>
+</tbody></table></div>
+<p class="fine">Each plan includes everything in the plan before it. Where a cell says “Included”, the feature comes from a lower plan.</p>
+
+<h3 style="margin-top:44px">What each feature means for you</h3>
+<div class="feat">
+<details open><summary>Professional videos</summary><p>Scripted, shot and edited for retention, with hooks built to stop the scroll. Short-form content is made to build your audience and move people toward your offer. Volume rises from 6 videos a month in Basic to 44 in Plus, so you can keep every platform fed.</p></details>
+<details><summary>Ad campaigns</summary><p>Targeted campaigns built around your audience and offer, from 1 campaign in Basic to 10 in Plus. Pro’s 6 high-impact campaigns are designed to help you reach 2x clients.</p></details>
+<details><summary>24/7 page and community management</summary><p>Basic covers complete page management around the clock. Standard adds advanced management with community handling, so comments and messages get attention and your page always feels active.</p></details>
+<details><summary>Organic growth and algorithm tuning</summary><p>We optimize your content and presence for organic reach. Standard accelerates page growth with algorithm tuning, and Plus extends it into advanced multi-platform omnipresence so your brand shows up wherever your audience is.</p></details>
+<details><summary>Content strategy and analytics</summary><p>Basic gives you a content strategy and analytics so you can see what works. In Plus, industry experts build a personalized growth strategy specific to your business.</p></details>
+<details><summary>Instagram blue tick assistance</summary><p>From Standard upward, we help you with the Instagram verification process to build credibility and trust with your audience.</p></details>
+<details><summary>AI automation integration</summary><p>Pro includes a single app setup to automate parts of your funnel and workflow. Plus includes advanced AI automations across your setup.</p></details>
+<details><summary>Custom professional website</summary><p>Pro and Plus include a custom professional website, so the attention your content earns lands on a page built to convert.</p></details>
+<details><summary>Multi-city and international reach</summary><p>Pro and Plus include optimization for multi-city and international orders and reach, helping you sell beyond your home market.</p></details>
+<details><summary>Model and studio shoots</summary><p>Plus includes 1 free model shoot video. Additional shoots carry standard production charges. A model shoot is also the alternative if you prefer not to shoot on site.</p></details>
+<details><summary>On-site shoot (Plus)</summary><p>Plus includes an on-site shoot. Depending on location, extra travel or logistics costs may apply, and it is subject to location and terms.</p></details>
+<details><summary>Dedicated account support</summary><p>Every plan comes with dedicated account support, so you have a point of contact for questions and requests.</p></details>
+</div>
+</div>
+</div></section>
+
+<section class="band" id="process"><div class="wrap">
+<h2>From first call to full scale in four steps.</h2>
+<p class="lead">A clear process, so you always know what happens next.</p>
+<div class="steps" style="border-color:var(--dark-ink)">
+<div class="step"><b>Step 1</b><h3>Audit &amp; Growth Strategy</h3><p style="color:color-mix(in srgb,var(--dark-ink) 72%,transparent)">We analyze your account, profile your target audience and tune your offer.</p></div>
+<div class="step"><b>Step 2</b><h3>Content Production &amp; Scripting</h3><p style="color:color-mix(in srgb,var(--dark-ink) 72%,transparent)">High-retention hooks, polished video edits and ad creatives, ready to perform.</p></div>
+<div class="step"><b>Step 3</b><h3>Launch &amp; Optimization</h3><p style="color:color-mix(in srgb,var(--dark-ink) 72%,transparent)">We publish, handle your page 24/7, launch ad campaigns and set up AI.</p></div>
+<div class="step"><b>Step 4</b><h3>Scale &amp; Omnipresence</h3><p style="color:color-mix(in srgb,var(--dark-ink) 72%,transparent)">Algorithm tuning, bigger budgets and reach, and performance tracking that guides every move.</p></div>
+</div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+<h2>Questions, answered.</h2>
+<div class="faq">
+<details open><summary>Can I pay in USD?</summary><p>Yes. Use the currency switch to see USD prices. INR is our base price, USD is an estimate for international billing, and we confirm the exact invoice amount on your call.</p></details>
+<details><summary>Is it a monthly retainer?</summary><p>Yes. Every plan is a monthly retainer with no hidden extras, so you know what you pay each month.</p></details>
+<details><summary>Can I move to a bigger plan later?</summary><p>Yes. Start where you are and move up as you grow. Each plan includes everything in the plan before it.</p></details>
+<details><summary>What if I do not want an on-site shoot?</summary><p>On the Plus plan we can coordinate a model shoot instead: 1 video is free. Additional model videos carry standard production charges.</p></details>
+<details><summary>What happens on the free strategy call?</summary><p>We look at your brand and goals, then show you where your fastest growth is. It is free and there is no pressure.</p></details>
+</div>
+</div></section>
+
+<section id="book"><div class="wrap book">
+<div>
+<h2>Ready to grow? Let’s map it out.</h2>
+<p class="lead">Tell us about your brand and goals. We’ll come to the call with a clear view of where your fastest growth is hiding.</p>
+<p class="lead">Free. No pressure. Just a sharper plan.</p>
+<ul class="contact">
+<li><a href="https://wa.me/918005649879" target="_blank" rel="noopener"><span><small>WhatsApp</small>+91 80056 49879</span></a></li>
+<li><a href="tel:+918005649879"><span><small>Call</small>+91 80056 49879</span></a></li>
+<li><a href="mailto:wdyanmol2012@gmail.com"><span><small>Email</small>wdyanmol2012@gmail.com</span></a></li>
+</ul>
+</div>
+<form id="f" novalidate>
+<div id="fields" style="display:grid;gap:16px">
+<label>Full name<input name="name" required autocomplete="name"></label>
+<label>Business / brand name<input name="brand" required autocomplete="organization"></label>
+<label>Monthly revenue / marketing budget<input name="budget" required id="budget" inputmode="text" placeholder="e.g. ₹50,000"></label>
+<label>Plan you are interested in<select name="plan" id="plan"><option value="">Not sure yet</option><option>Basic</option><option>Standard</option><option>Pro</option><option>Plus</option></select></label>
+<label>Primary challenge / goal
+<select name="goal" required><option value="">Select one</option><option>Video Creation</option><option>Paid Ads</option><option>Full Management</option><option>Website &amp; AI</option></select></label>
+<div class="row"><label>Phone / WhatsApp<input name="phone" type="tel" required autocomplete="tel"></label>
+<label>Email<input name="email" type="email" required autocomplete="email"></label></div>
+<button class="btn" type="submit">Claim Your Free Strategy Session</button>
+</div>
+<div class="ok" id="ok" role="status"><h3>One last tap.</h3><p>Your details are ready. Send them to us on WhatsApp or email and we will schedule your free strategy session.</p>
+<div class="okbtns"><a class="btn" id="okwa" href="#" target="_blank" rel="noopener">Send on WhatsApp</a><a class="btn ghost" id="okmail" href="#">Send by email</a></div></div>
+</form>
+</div></section>
+
+<footer><div class="wrap"><span>© 2020–2026 Pique Media. All rights reserved.</span><span>Anmol Singh · Jeehan · <a href="mailto:wdyanmol2012@gmail.com">wdyanmol2012@gmail.com</a> · <a href="tel:+918005649879">+91 80056 49879</a></span></div></footer>
+
+<div class="bar" id="bar"><a class="btn" href="#book">Book a Free Strategy Call</a></div>
+<script>
+(function(){
+  'use strict';
+  function $(s,r){return (r||document).querySelector(s)}
+  function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))}
+
+  /* 1. Reveal on scroll (content is never left hidden) */
+  var rv=$$('section h2,.founder,.svc>div,.plan,.step,form,.case,.fcard,.faq details,.contact li');
+  function showAll(){rv.forEach(function(el){el.classList.add('in')})}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){var t=x.target;t.classList.add('in');io.unobserve(t);setTimeout(function(){t.style.transitionDelay=''},900)}})},{rootMargin:'0px 0px -6% 0px'});
+    rv.forEach(function(el,i){el.style.transitionDelay=(i%4)*60+'ms';io.observe(el)});
+    setTimeout(showAll,4000);
+  }else{showAll()}
+
+  /* 2. Sticky bottom call-to-action on phones */
+  var bar=$('#bar'),st={top:true,book:false};
+  if(bar&&'IntersectionObserver' in window){
+    var so=new IntersectionObserver(function(es){es.forEach(function(x){st[x.target.id==='book'?'book':'top']=x.isIntersecting});bar.classList.toggle('show',!st.top&&!st.book)});
+    so.observe($('#top'));so.observe($('#book'));
+  }
+
+  /* 3. INR / USD */
+  var P={Basic:[8000,100],Standard:[18000,225],Pro:[36000,450],Plus:[55000,685]};
+  var cur='INR';
+  try{var sv=localStorage.getItem('pm-cur');if(sv==='INR'||sv==='USD')cur=sv;else throw 0}catch(e){
+    try{var tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'',lg=navigator.language||'';
+      cur=(/Kolkata|Calcutta/.test(tz)||/-IN$/i.test(lg))?'INR':'USD'}catch(x){}
+  }
+  function money(c,n){return (c==='INR'?'\u20b9':'$')+n.toLocaleString(c==='INR'?'en-IN':'en-US')}
+  function applyCur(){
+    $$('[data-p]').forEach(function(el){
+      var v=P[el.dataset.p],main=el.dataset.role==='main',c=main?cur:(cur==='INR'?'USD':'INR'),n=c==='INR'?v[0]:v[1];
+      el.textContent=main?money(c,n):(c==='USD'?'~'+money(c,n)+' USD':money(c,n)+' INR');
+    });
+    $$('.cur button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.c===cur))});
+    var n=$('#curnote');
+    if(n)n.textContent=cur==='INR'?'Prices in INR. USD shown as an estimate.':'Prices in USD (estimate). INR is our base price.';
+    var b=$('#budget');
+    if(b)b.placeholder=cur==='INR'?'e.g. \u20b950,000':'e.g. $600';
+  }
+  $$('.cur button').forEach(function(b){b.addEventListener('click',function(){
+    cur=b.dataset.c;try{localStorage.setItem('pm-cur',cur)}catch(e){}applyCur()})});
+  applyCur();
+
+  /* 4. Plan buttons pre-select the form */
+  $$('[data-plan]').forEach(function(a){a.addEventListener('click',function(){
+    var sel=$('#plan');if(sel)sel.value=a.dataset.plan})});
+
+  /* 5. Real Estate video chooser */
+  var d=$('#redlg'),o=$('#reopen');
+  function closeDlg(){if(d.close)d.close();else d.removeAttribute('open')}
+  if(d&&o){
+    o.addEventListener('click',function(){if(d.showModal)d.showModal();else d.setAttribute('open','')});
+    $('#reclose').addEventListener('click',closeDlg);
+    d.addEventListener('click',function(e){
+      var r=d.getBoundingClientRect();
+      if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDlg();
+    });
+  }
+
+  /* 6. Booking form: validate, then hand off to WhatsApp or email */
+  var form=$('#f');
+  function mark(el,bad){el.classList.toggle('bad',bad);el.setAttribute('aria-invalid',bad?'true':'false')}
+  $$('input,select',form).forEach(function(el){
+    el.addEventListener('input',function(){mark(el,false)});
+    el.addEventListener('change',function(){mark(el,false)});
+  });
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var first=null;
+    $$('[required]',form).forEach(function(el){
+      var v=el.value.trim(),bad=!v;
+      if(!bad&&el.type==='email')bad=!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+      if(!bad&&el.type==='tel')bad=v.replace(/\D/g,'').length<7;
+      mark(el,bad);
+      if(bad&&!first)first=el;
+    });
+    if(first){first.focus();return}
+    var data=new FormData(form);
+    function g(k){return (data.get(k)||'').toString().trim()}
+    var msg='Hi Pique Media, I want a free strategy call.\n\nName: '+g('name')+'\nBrand: '+g('brand')+'\nBudget: '+g('budget')+'\nGoal: '+g('goal')+(g('plan')?'\nPlan: '+g('plan'):'')+'\nPhone: '+g('phone')+'\nEmail: '+g('email');
+    var wa='https://wa.me/918005649879?text='+encodeURIComponent(msg);
+    $('#okwa').href=wa;
+    $('#okmail').href='mailto:wdyanmol2012@gmail.com?subject='+encodeURIComponent('Free strategy call: '+g('brand'))+'&body='+encodeURIComponent(msg);
+    $('#fields').style.display='none';
+    $('#ok').style.display='block';
+    $('#okwa').focus();
+    try{window.open(wa,'_blank','noopener')}catch(x){}
+  });
+})();
+</script>
 </body>
 </html>
